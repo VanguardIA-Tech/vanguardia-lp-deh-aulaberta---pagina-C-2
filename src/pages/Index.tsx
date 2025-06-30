@@ -21,10 +21,10 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <HeroSection onOpenModal={openModal} />
+      <ImpactSection onOpenModal={openModal} />
       <AboutSection onOpenModal={openModal} />
       <BenefitsSection onOpenModal={openModal} />
-      <ImpactSection onOpenModal={openModal} />
+      <HeroSection onOpenModal={openModal} />
       
       <FormModal isOpen={isModalOpen} onClose={closeModal} />
     </div>

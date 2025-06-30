@@ -15,14 +15,14 @@ const AboutSection = ({ onOpenModal }: AboutSectionProps) => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-vanguardia-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-vanguardia-black font-funnel">
             Quem Sou Eu
           </h2>
           
-          <div className="text-2xl md:text-3xl font-semibold mb-12 text-gray-700">
+          <div className="text-2xl md:text-3xl font-semibold mb-12 text-vanguardia-blue font-funnel">
             Jorge Antonio Auad Filho
           </div>
           
@@ -33,8 +33,8 @@ const AboutSection = ({ onOpenModal }: AboutSectionProps) => {
                 className="flex items-start gap-4 animate-slide-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
-                <p className="text-lg text-gray-700">{credential}</p>
+                <CheckCircle className="w-6 h-6 text-vanguardia-blue mt-1 flex-shrink-0" />
+                <p className="text-lg text-vanguardia-black font-redhat">{credential}</p>
               </div>
             ))}
           </div>
@@ -42,7 +42,7 @@ const AboutSection = ({ onOpenModal }: AboutSectionProps) => {
           <Button 
             onClick={onOpenModal}
             size="lg" 
-            className="bg-brand-red-500 hover:bg-brand-red-600 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="bg-vanguardia-blue hover:bg-blue-600 text-vanguardia-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-funnel"
           >
             Fazer Parte da Mentoria Mensal - R$0
           </Button>

@@ -19,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'funnel': ['Funnel Display', 'sans-serif'],
+				'redhat': ['Red Hat Display', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -63,7 +67,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for the landing page
+				// Vanguardia Brand Colors
+				'vanguardia': {
+					black: '#0D0D0D', // Preto Vanguardia
+					white: '#F4F4F4', // Branco Neve
+					blue: '#2046EA', // Azul Vanguardia
+					gray: '#939393', // Cinza Moderno
+				},
+				// Legacy colors for compatibility
 				'brand-blue': {
 					50: '#eff6ff',
 					100: '#dbeafe',
