@@ -60,16 +60,26 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
               </Button>
             </div>
             
-            {/* Image placeholder */}
+            {/* Jorge Antonio Card with Image */}
             <div className="flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <div className="relative">
-                <div className="w-80 h-96 bg-gradient-to-br from-vanguardia-blue/20 to-purple-500/20 rounded-2xl border border-vanguardia-blue/30 backdrop-blur-sm flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-24 h-24 bg-vanguardia-blue/30 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <div className="w-16 h-16 bg-vanguardia-blue rounded-full"></div>
+                <div className="w-80 h-96 bg-gradient-to-br from-vanguardia-blue/20 to-purple-500/20 rounded-2xl border border-vanguardia-blue/30 backdrop-blur-sm overflow-hidden">
+                  {/* Jorge's Image */}
+                  <div className="relative h-full">
+                    <img 
+                      src="/lovable-uploads/7d292775-fbe4-47a2-8b87-4a311f94dd8f.png" 
+                      alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia"
+                      className="w-full h-full object-cover object-center"
+                    />
+                    
+                    {/* Overlay gradient for better text visibility */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-vanguardia-black/80 via-transparent to-transparent"></div>
+                    
+                    {/* Text overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+                      <h3 className="text-xl font-semibold mb-2 font-funnel text-vanguardia-white">Jorge Antonio</h3>
+                      <p className="text-sm text-vanguardia-gray font-redhat">CEO Grupo Vanguardia</p>
                     </div>
-                    <h3 className="text-xl font-semibold mb-2 font-funnel text-vanguardia-white">Jorge Antonio</h3>
-                    <p className="text-sm text-vanguardia-gray font-redhat">CEO Grupo Vanguardia</p>
                   </div>
                 </div>
               </div>
