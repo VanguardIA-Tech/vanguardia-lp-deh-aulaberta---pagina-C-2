@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import ImpactSection from "@/components/ImpactSection";
@@ -24,7 +23,6 @@ const Index = () => {
       <ImpactSection onOpenModal={openModal} />
       <AboutSection onOpenModal={openModal} />
       <BenefitsSection onOpenModal={openModal} />
-      <HeroSection onOpenModal={openModal} />
       
       <FormModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
