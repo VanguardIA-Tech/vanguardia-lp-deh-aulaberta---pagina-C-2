@@ -1,12 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from "react";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import BenefitsSection from "@/components/BenefitsSection";
+import ImpactSection from "@/components/ImpactSection";
+import FormModal from "@/components/FormModal";
 
 const Index = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    console.log("Opening modal");
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    console.log("Closing modal");
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <HeroSection onOpenModal={openModal} />
+      <AboutSection onOpenModal={openModal} />
+      <BenefitsSection onOpenModal={openModal} />
+      <ImpactSection onOpenModal={openModal} />
+      
+      <FormModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
