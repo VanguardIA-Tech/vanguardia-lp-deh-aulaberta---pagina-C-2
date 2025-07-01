@@ -1,4 +1,3 @@
-
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -69,31 +68,20 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
             
             {/* Jorge Antonio Card com imagem maior e sem overlay */}
             <div className="flex justify-center lg:justify-end animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <div className="relative">
-                <div className="w-96 h-[500px] bg-gradient-to-br from-vanguardia-blue/20 to-vanguardia-deep-blue/40 rounded-2xl border border-vanguardia-blue/30 backdrop-blur-sm overflow-hidden vanguardia-blue-glow">
-                  {/* Jorge's Image sem overlay escuro */}
-                  <div className="relative h-full">
-                    <img 
-                      src="/lovable-uploads/7d292775-fbe4-47a2-8b87-4a311f94dd8f.png" 
-                      alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia" 
-                      className="w-full h-full object-cover object-center" 
-                    />
-                    
-                    {/* Text overlay apenas na parte inferior */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-center bg-gradient-to-t from-vanguardia-black/60 to-transparent">
-                      <h3 className="text-xl font-semibold mb-2 font-funnel text-vanguardia-white">
-                        Jorge Antonio
-                      </h3>
-                      <p className="text-sm text-vanguardia-gray font-redhat">
-                        CEO Grupo Vanguardia
-                      </p>
-                    </div>
-                  </div>
+              <div className="relative flex flex-col items-center justify-center w-full">
+                <img 
+                  src="/lovable-uploads/7d292775-fbe4-47a2-8b87-4a311f94dd8f.png" 
+                  alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia" 
+                  className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg w-full h-auto object-contain object-center rounded-2xl bg-transparent" 
+                />
+                <div className="text-center mt-[-0.5rem] w-full">
+                  <h3 className="text-xl font-semibold font-funnel text-vanguardia-white leading-tight">
+                    Jorge Antonio
+                  </h3>
+                  <p className="text-sm text-vanguardia-gray font-redhat leading-tight">
+                    CEO Grupo Vanguardia
+                  </p>
                 </div>
-                
-                {/* Elementos decorativos ao redor da imagem */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-vanguardia-blue rounded-full opacity-60 animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-vanguardia-blue rounded-full opacity-80 animate-pulse" style={{animationDelay: '0.5s'}}></div>
               </div>
             </div>
           </div>

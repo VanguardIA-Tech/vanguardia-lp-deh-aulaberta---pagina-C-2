@@ -1,4 +1,3 @@
-
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -35,26 +34,14 @@ const AboutSection = ({ onOpenModal }: AboutSectionProps) => {
             {/* Image Section */}
             <div className="relative order-2 lg:order-1">
               <div className="relative">
-                {/* Círculos decorativos de fundo com efeito glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-vanguardia-blue/20 to-vanguardia-blue/5 rounded-full transform rotate-6 scale-110 vanguardia-blue-glow"></div>
-                <div className="absolute inset-0 bg-gradient-to-tl from-vanguardia-blue/15 to-transparent rounded-full transform -rotate-3 scale-105"></div>
-                
                 {/* Container principal da imagem */}
-                <div className="relative bg-gradient-to-br from-vanguardia-white/10 to-vanguardia-blue/20 rounded-2xl p-8 vanguardia-blue-glow border border-vanguardia-blue/30 backdrop-blur-sm">
+                <div className="relative bg-transparent rounded-2xl p-0 border-0">
                   <img 
                     src="/lovable-uploads/6179de73-e25c-4a1d-8511-2bdf87f604bd.png" 
                     alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia"
-                    className="w-full h-auto rounded-xl shadow-2xl"
+                    className="w-full h-auto rounded-xl"
                   />
-                  
-                  {/* Overlay gradient para melhor integração */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-vanguardia-blue/10 to-transparent rounded-2xl pointer-events-none"></div>
                 </div>
-                
-                {/* Elementos flutuantes com animação */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-vanguardia-blue rounded-full opacity-60 animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-vanguardia-blue rounded-full opacity-80 animate-pulse" style={{animationDelay: '1s'}}></div>
-                <div className="absolute top-1/2 -left-8 w-4 h-4 bg-vanguardia-blue rounded-full opacity-40 animate-pulse" style={{animationDelay: '2s'}}></div>
               </div>
             </div>
             
