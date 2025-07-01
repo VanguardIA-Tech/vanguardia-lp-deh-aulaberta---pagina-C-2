@@ -22,35 +22,35 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-vanguardia-deep-blue via-vanguardia-medium-blue to-vanguardia-black py-20 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-vanguardia-deep-blue via-vanguardia-medium-blue to-vanguardia-black py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
       {/* Elementos decorativos de fundo */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
-        <div className="absolute top-20 right-20 w-64 h-64 bg-vanguardia-blue/30 rounded-full blur-3xl animate-pulse-glow"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-vanguardia-blue/20 rounded-full blur-3xl animate-pulse-glow" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 h-48 sm:w-64 sm:h-64 bg-vanguardia-blue/30 rounded-full blur-3xl animate-pulse-glow"></div>
+        <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-36 h-36 sm:w-48 sm:h-48 bg-vanguardia-blue/20 rounded-full blur-3xl animate-pulse-glow" style={{animationDelay: '1.5s'}}></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-vanguardia-white font-funnel vanguardia-text-glow">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-vanguardia-white font-funnel vanguardia-text-glow">
               O que tu vais receber
             </h2>
-            <p className="text-xl text-vanguardia-gray max-w-3xl mx-auto font-redhat">
+            <p className="text-lg sm:text-xl text-vanguardia-gray max-w-3xl mx-auto font-redhat">
               Mentoria com o Jorge + Conteúdo Exclusivo em Grupo
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 mb-12">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-8 sm:mb-12">
             {/* Mentorship Method */}
-            <div className="bg-vanguardia-white/5 backdrop-blur-sm rounded-2xl p-8 animate-slide-in border border-vanguardia-blue/30 hover:border-vanguardia-blue/50 transition-all duration-300 vanguardia-blue-glow">
-              <h3 className="text-2xl font-bold mb-6 text-vanguardia-blue font-funnel">
+            <div className="bg-vanguardia-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 animate-slide-in border border-vanguardia-blue/30 hover:border-vanguardia-blue/50 transition-all duration-300 vanguardia-blue-glow">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-vanguardia-blue font-funnel">
                 Mentoria Mensal com Jorge - Método (DEH)
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {mentorshipBenefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-vanguardia-blue mt-1 flex-shrink-0" />
-                    <p className="text-vanguardia-white font-redhat">{benefit}</p>
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-vanguardia-blue mt-1 flex-shrink-0" />
+                    <p className="text-sm sm:text-base text-vanguardia-white font-redhat">{benefit}</p>
                   </div>
                 ))}
               </div>
@@ -58,17 +58,17 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
             
             {/* General Benefits */}
             <div 
-              className="bg-vanguardia-blue/10 backdrop-blur-sm rounded-2xl p-8 animate-slide-in border border-vanguardia-blue/40 hover:border-vanguardia-blue/60 transition-all duration-300 vanguardia-blue-glow" 
+              className="bg-vanguardia-blue/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 animate-slide-in border border-vanguardia-blue/40 hover:border-vanguardia-blue/60 transition-all duration-300 vanguardia-blue-glow" 
               style={{animationDelay: '0.2s'}}
             >
-              <h3 className="text-2xl font-bold mb-6 text-vanguardia-white font-funnel">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-vanguardia-white font-funnel">
                 Quais Benefícios em Fazer Parte da Mentoria
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {generalBenefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-vanguardia-blue mt-1 flex-shrink-0" />
-                    <p className="text-vanguardia-white font-redhat">{benefit}</p>
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-vanguardia-blue mt-1 flex-shrink-0" />
+                    <p className="text-sm sm:text-base text-vanguardia-white font-redhat">{benefit}</p>
                   </div>
                 ))}
               </div>
@@ -79,7 +79,7 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
             <Button 
               onClick={onOpenModal} 
               size="lg" 
-              className="bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide"
+              className="w-full sm:w-auto bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide"
             >
               Fazer Parte da Mentoria Mensal - R$0
             </Button>

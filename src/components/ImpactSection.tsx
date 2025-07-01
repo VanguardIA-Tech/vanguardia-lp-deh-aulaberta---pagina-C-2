@@ -1,3 +1,4 @@
+
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -13,7 +14,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-vanguardia-black via-vanguardia-dark-blue via-vanguardia-medium-blue to-vanguardia-deep-blue text-vanguardia-white relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-vanguardia-black via-vanguardia-dark-blue via-vanguardia-medium-blue to-vanguardia-deep-blue text-vanguardia-white relative overflow-hidden">
       {/* Background pattern com efeitos sofisticados */}
       <div className="absolute inset-0 opacity-5">
         <div 
@@ -25,8 +26,8 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
       </div>
       
       {/* Elementos decorativos com glow azul */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-vanguardia-blue/20 rounded-full blur-3xl animate-pulse-glow"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-vanguardia-blue/15 rounded-full blur-3xl animate-pulse-glow" style={{animationDelay: '1s'}}></div>
+      <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-24 h-24 sm:w-32 sm:h-32 bg-vanguardia-blue/20 rounded-full blur-3xl animate-pulse-glow"></div>
+      <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-28 h-28 sm:w-40 sm:h-40 bg-vanguardia-blue/15 rounded-full blur-3xl animate-pulse-glow" style={{animationDelay: '1s'}}></div>
       
       <div className="container mx-auto px-4 relative z-10 min-h-screen flex items-center">
         <div className="max-w-6xl mx-auto w-full">
