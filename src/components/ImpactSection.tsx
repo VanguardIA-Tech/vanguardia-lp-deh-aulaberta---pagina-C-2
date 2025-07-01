@@ -1,3 +1,4 @@
+
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -13,7 +14,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-vanguardia-black via-vanguardia-dark-blue via-vanguardia-medium-blue to-vanguardia-deep-blue text-vanguardia-white relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-vanguardia-black via-vanguardia-dark-blue via-vanguardia-medium-blue to-vanguardia-deep-blue text-vanguardia-white relative overflow-hidden">
       {/* Background pattern com efeitos sofisticados */}
       <div className="absolute inset-0 opacity-5">
         <div 
@@ -25,34 +26,34 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
       </div>
       
       {/* Elementos decorativos com glow azul */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-vanguardia-blue/20 rounded-full blur-3xl animate-pulse-glow"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-vanguardia-blue/15 rounded-full blur-3xl animate-pulse-glow" style={{animationDelay: '1s'}}></div>
+      <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-24 h-24 sm:w-32 sm:h-32 bg-vanguardia-blue/20 rounded-full blur-3xl animate-pulse-glow"></div>
+      <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-28 h-28 sm:w-40 sm:h-40 bg-vanguardia-blue/15 rounded-full blur-3xl animate-pulse-glow" style={{animationDelay: '1s'}}></div>
       
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Content */}
-            <div className="animate-fade-in">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-funnel text-vanguardia-white vanguardia-text-glow">
+            <div className="animate-fade-in order-2 lg:order-1">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 font-funnel text-vanguardia-white vanguardia-text-glow leading-tight">
                 Tu estás usando IA errado.
-              </h2>
-              <p className="text-2xl md:text-3xl mb-8 text-vanguardia-blue italic font-funnel font-semibold">
+              </h1>
+              <p className="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 text-vanguardia-blue italic font-funnel font-semibold">
                 E isso te custa 28k por mês.
               </p>
-              <p className="text-xl mb-8 text-vanguardia-gray leading-relaxed font-redhat">
+              <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-vanguardia-gray leading-relaxed font-redhat">
                 Aumenta teu ticket em 10x usando o mesmo conhecimento que tu já tem, 
                 apenas deixando de ser braço para se tornar cérebro.
               </p>
               
-              <div className="space-y-4 mb-8">
+              <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                 {stats.map((stat, index) => (
                   <div 
                     key={index} 
-                    className="flex items-start gap-3 animate-slide-in bg-vanguardia-white/5 p-4 rounded-lg border border-vanguardia-blue/20 backdrop-blur-sm" 
+                    className="flex items-start gap-3 animate-slide-in bg-vanguardia-white/5 p-3 sm:p-4 rounded-lg border border-vanguardia-blue/20 backdrop-blur-sm" 
                     style={{animationDelay: `${index * 0.1}s`}}
                   >
-                    <CheckCircle className="w-6 h-6 text-vanguardia-blue mt-1 flex-shrink-0" />
-                    <p className="text-lg text-vanguardia-white font-redhat">{stat}</p>
+                    <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-vanguardia-blue mt-1 flex-shrink-0" />
+                    <p className="text-base sm:text-lg text-vanguardia-white font-redhat">{stat}</p>
                   </div>
                 ))}
               </div>
@@ -60,22 +61,22 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
               <Button 
                 onClick={onOpenModal} 
                 size="lg" 
-                className="bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide"
+                className="w-full sm:w-auto bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide"
               >
                 Fazer Parte da Mentoria Mensal - R$0
               </Button>
             </div>
             
-            {/* Jorge Antonio Card com imagem maior e sem overlay */}
-            <div className="flex justify-center lg:justify-end animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <div className="relative flex flex-col items-center justify-center w-full">
+            {/* Jorge Antonio Card */}
+            <div className="flex justify-center lg:justify-end animate-fade-in order-1 lg:order-2" style={{animationDelay: '0.3s'}}>
+              <div className="relative flex flex-col items-center justify-center w-full max-w-sm sm:max-w-md md:max-w-lg">
                 <img 
                   src="/lovable-uploads/7d292775-fbe4-47a2-8b87-4a311f94dd8f.png" 
                   alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia" 
-                  className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg w-full h-auto object-contain object-center rounded-2xl bg-transparent" 
+                  className="w-full h-auto object-contain object-center rounded-2xl" 
                 />
-                <div className="text-center mt-[-0.5rem] w-full">
-                  <h3 className="text-xl font-semibold font-funnel text-vanguardia-white leading-tight">
+                <div className="text-center mt-2 w-full">
+                  <h3 className="text-lg sm:text-xl font-semibold font-funnel text-vanguardia-white leading-tight">
                     Jorge Antonio
                   </h3>
                   <p className="text-sm text-vanguardia-gray font-redhat leading-tight">

@@ -44,7 +44,7 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
       <div 
         className="absolute inset-0 bg-vanguardia-black/80 backdrop-blur-sm"
@@ -52,7 +52,7 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
       ></div>
       
       {/* Modal Content */}
-      <div className="relative bg-vanguardia-white rounded-2xl shadow-2xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto border border-vanguardia-gray/20">
+      <div className="relative bg-vanguardia-white rounded-2xl shadow-2xl w-full max-w-md sm:max-w-lg max-h-[90vh] overflow-y-auto border border-vanguardia-gray/20">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -62,20 +62,20 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
         </button>
         
         {/* Form Container */}
-        <div className="p-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-vanguardia-blue mb-2 font-funnel">
+        <div className="p-6 sm:p-8">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-xl sm:text-2xl font-bold text-vanguardia-blue mb-2 font-funnel">
               Cadastre-se para assistir a aula aberta da Vanguardia
             </h2>
-            <p className="text-vanguardia-gray font-redhat">
+            <p className="text-sm sm:text-base text-vanguardia-gray font-redhat">
               Seja bem-vindo à Vanguardia.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
             {/* Nome Completo */}
             <div className="space-y-2">
-              <Label htmlFor="fullname" className="text-vanguardia-black font-semibold font-redhat">
+              <Label htmlFor="fullname" className="text-vanguardia-black font-semibold font-redhat text-sm sm:text-base">
                 Nome completo <span className="text-red-500">*</span>
               </Label>
               <Input
@@ -85,13 +85,13 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
                 value={formData.fullname}
                 onChange={(e) => handleInputChange('fullname', e.target.value)}
                 required
-                className="border-vanguardia-gray/30 focus:border-vanguardia-blue focus:ring-vanguardia-blue/20 font-redhat"
+                className="border-vanguardia-gray/30 focus:border-vanguardia-blue focus:ring-vanguardia-blue/20 font-redhat text-sm sm:text-base h-10 sm:h-12"
               />
             </div>
 
             {/* Email */}
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-vanguardia-black font-semibold font-redhat">
+              <Label htmlFor="email" className="text-vanguardia-black font-semibold font-redhat text-sm sm:text-base">
                 Email <span className="text-red-500">*</span>
               </Label>
               <Input
@@ -101,13 +101,13 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
                 value={formData.email}
                 onChange={(e) => handleInputChange('email', e.target.value)}
                 required
-                className="border-vanguardia-gray/30 focus:border-vanguardia-blue focus:ring-vanguardia-blue/20 font-redhat"
+                className="border-vanguardia-gray/30 focus:border-vanguardia-blue focus:ring-vanguardia-blue/20 font-redhat text-sm sm:text-base h-10 sm:h-12"
               />
             </div>
 
             {/* Telefone */}
             <div className="space-y-2">
-              <Label htmlFor="phone" className="text-vanguardia-black font-semibold font-redhat">
+              <Label htmlFor="phone" className="text-vanguardia-black font-semibold font-redhat text-sm sm:text-base">
                 Telefone <span className="text-red-500">*</span>
               </Label>
               <Input
@@ -117,13 +117,13 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
                 value={formData.phone}
                 onChange={(e) => handleInputChange('phone', e.target.value)}
                 required
-                className="border-vanguardia-gray/30 focus:border-vanguardia-blue focus:ring-vanguardia-blue/20 font-redhat"
+                className="border-vanguardia-gray/30 focus:border-vanguardia-blue focus:ring-vanguardia-blue/20 font-redhat text-sm sm:text-base h-10 sm:h-12"
               />
             </div>
 
             {/* Faturamento Mensal */}
             <div className="space-y-3">
-              <Label className="text-vanguardia-black font-semibold font-redhat">
+              <Label className="text-vanguardia-black font-semibold font-redhat text-sm sm:text-base">
                 Faturamento mensal <span className="text-red-500">*</span>
               </Label>
               <RadioGroup
@@ -145,7 +145,7 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
                       id={option}
                       className="border-vanguardia-gray/40 text-vanguardia-blue"
                     />
-                    <Label htmlFor={option} className="font-redhat text-vanguardia-black cursor-pointer">
+                    <Label htmlFor={option} className="font-redhat text-vanguardia-black cursor-pointer text-sm sm:text-base">
                       {option}
                     </Label>
                   </div>
@@ -156,7 +156,7 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
             {/* Submit Button */}
             <Button
               type="submit"
-              className="w-full bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl font-funnel text-base"
+              className="w-full bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white font-semibold py-3 sm:py-4 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl font-funnel text-sm sm:text-base"
             >
               Enviar
             </Button>
