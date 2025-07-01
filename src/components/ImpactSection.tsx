@@ -67,11 +67,11 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
               </Button>
             </div>
             
-            {/* Jorge Antonio Card com a nova imagem */}
+            {/* Jorge Antonio Card com imagem maior e sem overlay */}
             <div className="flex justify-center lg:justify-end animate-fade-in" style={{animationDelay: '0.3s'}}>
               <div className="relative">
-                <div className="w-80 h-96 bg-gradient-to-br from-vanguardia-blue/20 to-vanguardia-deep-blue/40 rounded-2xl border border-vanguardia-blue/30 backdrop-blur-sm overflow-hidden vanguardia-blue-glow">
-                  {/* Jorge's Image */}
+                <div className="w-96 h-[500px] bg-gradient-to-br from-vanguardia-blue/20 to-vanguardia-deep-blue/40 rounded-2xl border border-vanguardia-blue/30 backdrop-blur-sm overflow-hidden vanguardia-blue-glow">
+                  {/* Jorge's Image sem overlay escuro */}
                   <div className="relative h-full">
                     <img 
                       src="/lovable-uploads/7d292775-fbe4-47a2-8b87-4a311f94dd8f.png" 
@@ -79,11 +79,8 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
                       className="w-full h-full object-cover object-center" 
                     />
                     
-                    {/* Overlay gradient para melhor visibilidade do texto */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-vanguardia-black/80 via-transparent to-transparent"></div>
-                    
-                    {/* Text overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+                    {/* Text overlay apenas na parte inferior */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-center bg-gradient-to-t from-vanguardia-black/60 to-transparent">
                       <h3 className="text-xl font-semibold mb-2 font-funnel text-vanguardia-white">
                         Jorge Antonio
                       </h3>
