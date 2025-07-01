@@ -67,27 +67,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Vanguardia Brand Colors
+				// Vanguardia Brand Colors - Cores oficiais HEX convertidas para HSL
 				'vanguardia': {
 					black: '#0D0D0D', // Preto Vanguardia
-					white: '#F4F4F4', // Branco Neve
+					white: '#F4F4F4', // Branco Neve  
 					blue: '#2046EA', // Azul Vanguardia
 					gray: '#939393', // Cinza Moderno
-				},
-				// Legacy colors for compatibility
-				'brand-blue': {
-					50: '#eff6ff',
-					100: '#dbeafe',
-					500: '#3b82f6',
-					600: '#2563eb',
-					700: '#1d4ed8',
-					800: '#1e40af',
-					900: '#1e3a8a',
-				},
-				'brand-red': {
-					400: '#f87171',
-					500: '#ef4444',
-					600: '#dc2626',
+					// Tons complementares para gradientes
+					'dark-blue': '#1a1a2e',
+					'medium-blue': '#16213e', 
+					'deep-blue': '#0f3460',
 				},
 			},
 			borderRadius: {
@@ -119,13 +108,18 @@ export default {
 				'slide-in': {
 					'0%': { opacity: '0', transform: 'translateX(-30px)' },
 					'100%': { opacity: '1', transform: 'translateX(0)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(32, 70, 234, 0.3)' },
+					'50%': { boxShadow: '0 0 30px rgba(32, 70, 234, 0.6)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'slide-in': 'slide-in 0.6s ease-out'
+				'slide-in': 'slide-in 0.6s ease-out',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			}
 		}
 	},
