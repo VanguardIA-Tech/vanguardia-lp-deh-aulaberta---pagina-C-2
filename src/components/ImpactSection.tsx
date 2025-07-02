@@ -1,4 +1,3 @@
-
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -44,7 +43,13 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
                 Aumenta teu ticket em 10x usando o mesmo conhecimento que tu já tem, 
                 apenas deixando de ser braço para se tornar cérebro.
               </p>
-              
+              <Button 
+                onClick={onOpenModal} 
+                size="lg" 
+                className="bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide w-full lg:max-w-lg mx-auto lg:mx-0 mb-6"
+              >
+                Fazer Parte da Mentoria Mensal - R$0
+              </Button>
               <div className="space-y-4 mb-8 w-full lg:max-w-lg mx-auto lg:mx-0">
                 {stats.map((stat, index) => (
                   <div 
@@ -60,20 +65,13 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
                 ))}
               </div>
               
-              <Button 
-                onClick={onOpenModal} 
-                size="lg" 
-                className="bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide w-full lg:max-w-lg mx-auto lg:mx-0"
-              >
-                Fazer Parte da Mentoria Mensal - R$0
-              </Button>
             </div>
             
             {/* Jorge Antonio Card com imagem maior e sem overlay */}
             <div className="flex flex-col items-center justify-end h-full animate-fade-in" style={{animationDelay: '0.3s'}}>
               <div className="relative flex flex-col items-center justify-end w-full">
                 <img 
-                  src="/lovable-uploads/7d292775-fbe4-47a2-8b87-4a311f94dd8f.png" 
+                  src="/7d292775-fbe4-47a2-8b87-4a311f94dd8f.png" 
                   alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia" 
                   className="w-[100vw] sm:w-full h-auto object-contain object-center rounded-2xl bg-transparent mx-auto"
                   style={{maxHeight: '1100px'}}
