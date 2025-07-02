@@ -13,22 +13,12 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-vanguardia-black via-vanguardia-dark-blue via-vanguardia-medium-blue to-vanguardia-deep-blue text-vanguardia-white relative overflow-hidden">
-      {/* Background pattern com efeitos sofisticados */}
-      <div className="absolute inset-0 opacity-5">
-        <div 
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23F4F4F4' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }} 
-          className="w-full h-full bg-repeat"
-        ></div>
-      </div>
-      
+
+<section className="mt-6 md:mt-0 text-vanguardia-white relative overflow-hidden" style={{background: 'url(/bg-impact-section.png) center center / cover no-repeat, #0a1633'}}>
       {/* Elementos decorativos com glow azul */}
       <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-24 h-24 sm:w-32 sm:h-32 bg-vanguardia-blue/20 rounded-full blur-3xl animate-pulse-glow"></div>
       <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-28 h-28 sm:w-40 sm:h-40 bg-vanguardia-blue/15 rounded-full blur-3xl animate-pulse-glow" style={{animationDelay: '1s'}}></div>
-      
-      <div className="container mx-auto px-4 relative z-10 min-h-screen flex items-center">
+      <div className="container mx-auto px-0 relative z-10 min-h-screen flex items-center">
         <div className="max-w-6xl mx-auto w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
             {/* Content */}
@@ -73,17 +63,9 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
                 <img 
                   src="/7d292775-fbe4-47a2-8b87-4a311f94dd8f.png" 
                   alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia" 
-                  className="w-[100vw] sm:w-full h-auto object-contain object-center rounded-2xl bg-transparent mx-auto"
-                  style={{maxHeight: '1100px'}}
+                  className="w-[100vw] sm:w-full h-auto object-contain object-center rounded-2xl bg-transparent mx-auto lg:w-[900px] lg:max-w-[1100px]"
+                  style={{maxHeight: '1200px'}}
                 />
-                <div className="flex flex-col items-center justify-center text-center mt-6 w-full">
-                  <h3 className="text-xl font-semibold font-funnel text-vanguardia-white leading-tight">
-                    Jorge Antonio
-                  </h3>
-                  <p className="text-sm text-vanguardia-gray font-redhat leading-tight">
-                    CEO Grupo Vanguardia
-                  </p>
-                </div>
               </div>
             </div>
           </div>
