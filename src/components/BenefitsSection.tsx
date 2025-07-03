@@ -1,4 +1,3 @@
-
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -79,7 +78,7 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
             <Button 
               onClick={onOpenModal} 
               size="lg" 
-              className="w-full sm:w-auto bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide"
+              className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 transform hover:scale-105 font-funnel uppercase tracking-wide rounded-xl"
             >
               Fazer Parte da Mentoria Mensal - R$0
             </Button>

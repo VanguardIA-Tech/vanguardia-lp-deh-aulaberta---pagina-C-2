@@ -48,7 +48,7 @@ const AboutSection = ({
                 ))}
               </div>
               <div className="text-center w-full flex justify-center mb-8">
-                <Button onClick={onOpenModal} size="lg" className="w-full max-w-[382px] bg-vanguardia-blue hover:bg-vanguardia-blue/90 text-vanguardia-white px-8 py-4 text-base sm:text-lg font-semibold transition-all duration-300 font-funnel border-0 rounded-xl uppercase tracking-wide">
+                <Button onClick={onOpenModal} size="lg" className="w-full max-w-[382px] bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 text-base sm:text-lg transition-all duration-300 font-funnel border-0 rounded-xl uppercase tracking-wide">
                   Fazer Parte da Mentoria Mensal - R$0
                 </Button>
               </div>
