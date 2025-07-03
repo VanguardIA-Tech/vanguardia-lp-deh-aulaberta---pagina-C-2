@@ -42,14 +42,14 @@ const AboutSection = ({
               <div className="space-y-4 mb-6 w-full flex flex-col items-center">
                 {credentials.map((credential, index) => (
                   <div key={index} className="flex items-center gap-3 sm:gap-4 animate-slide-in bg-vanguardia-white/5 py-3 px-4 sm:py-4 sm:px-6 rounded-lg border border-vanguardia-blue/20 hover:border-vanguardia-blue/40 transition-all duration-300 hover:shadow-lg backdrop-blur-sm w-full max-w-[95vw] sm:max-w-[520px] text-left" style={{animationDelay: `${index * 0.1}s`}}>
-                    <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-vanguardia-blue flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-lime-400 flex-shrink-0" />
                     <p className="text-base sm:text-lg text-vanguardia-white font-redhat leading-relaxed w-full break-words">{credential}</p>
                   </div>
                 ))}
               </div>
               <div className="text-center w-full flex justify-center mb-8">
-                <Button onClick={onOpenModal} size="lg" className="w-full max-w-[382px] bg-orange-500 hover:bg-orange-600 text-white font-bold px-2 py-1 sm:px-8 sm:py-4 text-sm sm:text-lg transition-all duration-300 font-funnel border-0 rounded-xl uppercase tracking-wide">
-                  Fazer Parte da Mentoria Mensal - R$0
+                <Button onClick={onOpenModal} size="lg" className="w-[300px] h-[60px] sm:w-[380px] sm:h-[68px] bg-lime-400 hover:bg-lime-500 text-black font-bold text-base sm:text-lg transition-all duration-300 font-funnel border-0 rounded-xl uppercase tracking-wide mx-auto flex items-center justify-center mb-6 text-center whitespace-normal">
+                  Quero fazer parte da mentoria mensal - R$0
                 </Button>
               </div>
             </div>

@@ -36,9 +36,9 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
               <Button 
                 onClick={onOpenModal} 
                 size="lg" 
-                className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-2 py-1 sm:px-8 sm:py-4 text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide w-full max-w-[382px] mx-auto mb-6 rounded-xl"
+                className="w-[300px] h-[60px] sm:w-[380px] sm:h-[68px] bg-lime-400 hover:bg-lime-500 text-black font-bold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide mx-auto mb-6 rounded-xl flex items-center justify-center text-center whitespace-normal"
               >
-                Fazer Parte da Mentoria Mensal - R$0
+                Quero fazer parte da Mentoria Mensal 
               </Button>
               <div className="space-y-4 mb-8 w-full lg:max-w-lg mx-auto lg:mx-0">
                 {stats.map((stat, index) => (
@@ -47,7 +47,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
                     className="flex items-start gap-3 animate-slide-in bg-vanguardia-white/5 p-4 rounded-lg border border-vanguardia-blue/20 backdrop-blur-sm w-full break-words" 
                     style={{animationDelay: `${index * 0.1}s`}}
                   >
-                    <CheckCircle className="w-6 h-6 text-vanguardia-blue mt-1 flex-shrink-0" />
+                    <CheckCircle className="w-6 h-6 text-lime-400 mt-1 flex-shrink-0" />
                     <p className="text-lg text-vanguardia-white font-redhat w-full break-words text-left">
                       {stat}
                     </p>

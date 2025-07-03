@@ -48,7 +48,7 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
               <div className="space-y-3 sm:space-y-4">
                 {mentorshipBenefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-vanguardia-blue mt-1 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-lime-400 mt-1 flex-shrink-0" />
                     <p className="text-sm sm:text-base text-vanguardia-white font-redhat">{benefit}</p>
                   </div>
                 ))}
@@ -66,7 +66,7 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
               <div className="space-y-3 sm:space-y-4">
                 {generalBenefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-vanguardia-blue mt-1 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-lime-400 mt-1 flex-shrink-0" />
                     <p className="text-sm sm:text-base text-vanguardia-white font-redhat">{benefit}</p>
                   </div>
                 ))}
@@ -78,9 +78,9 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
             <Button 
               onClick={onOpenModal} 
               size="lg" 
-              className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-2 py-1 sm:px-8 sm:py-4 text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 font-funnel uppercase tracking-wide rounded-xl"
+              className="w-[300px] h-[60px] lg:w-[380px] lg:h-[68px] bg-lime-400 hover:bg-lime-500 text-black font-bold text-base lg:text-lg transition-all duration-300 font-funnel rounded-xl mx-auto flex items-center justify-center mb-6 text-center whitespace-normal"
             >
-              Fazer Parte da Mentoria Mensal - R$0
+              Quero Entrar Para a Mentoria Mensal
             </Button>
           </div>
         </div>

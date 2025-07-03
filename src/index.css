@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -86,6 +85,10 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
+  }
+
+  html, body {
+    background: #0a1633;
   }
 
   body {
