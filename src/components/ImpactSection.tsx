@@ -36,7 +36,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
               <Button 
                 onClick={onOpenModal} 
                 size="lg" 
-                className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide w-full max-w-[382px] mx-auto mb-6"
+                className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-2 py-1 sm:px-8 sm:py-4 text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide w-full max-w-[382px] mx-auto mb-6 rounded-xl"
               >
                 Fazer Parte da Mentoria Mensal - R$0
               </Button>

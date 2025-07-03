@@ -78,7 +78,7 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
             <Button 
               onClick={onOpenModal} 
               size="lg" 
-              className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 transform hover:scale-105 font-funnel uppercase tracking-wide rounded-xl"
+              className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-2 py-1 sm:px-8 sm:py-4 text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 font-funnel uppercase tracking-wide rounded-xl"
             >
               Fazer Parte da Mentoria Mensal - R$0
             </Button>
