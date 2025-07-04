@@ -5,7 +5,7 @@ interface AboutSectionProps {
 }
 const AboutSection = ({ onOpenModal }: AboutSectionProps) => {
   const credentials = ["Conselheiro de Growth & IA em empresas que ultrapassam 9 dígitos/ano de receita", "CEO do Grupo Vanguardia e sócio do Do IT Hub, ecossistema de inovação em Belém", "Mais de 400 projetos acelerados e múltiplos 7 dígitos de faturamento", "8 anos no mercado digital, construindo negócios, agências e aceleradoras"];
-  return <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-vanguardia-black via-vanguardia-dark-blue to-vanguardia-medium-blue overflow-hidden">
+  return <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 pb-0 sm:pb-0 md:pb-0 lg:pb-0 xl:pb-0 bg-gradient-to-br from-vanguardia-black via-vanguardia-dark-blue to-vanguardia-medium-blue overflow-hidden">
       {/* Background decorativo com elementos sofisticados */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-20 sm:-top-40 -right-20 sm:-right-40 w-60 h-60 sm:w-80 sm:h-80 bg-vanguardia-blue/10 rounded-full blur-3xl animate-pulse-glow"></div>
