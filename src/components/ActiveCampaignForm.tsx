@@ -3,7 +3,7 @@ import React from "react";
 const formHtml = `
 <style>@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400,400i,700);</style>
 <style>
-#_form_6_ {font-size:16px;line-height:1.6;font-family:'IBM Plex Sans',arial,helvetica,sans-serif;margin:0;max-width:420px;margin:auto;}
+#_form_6_ {font-size:16px;line-height:1.6;font-family:'IBM Plex Sans',arial,helvetica,sans-serif;margin:0;max-width:420px;margin:auto;padding:32px 0 32px 0;box-sizing:border-box;width:100%;/* Removido height e max-height para evitar scroll interno */}
 #_form_6_ ._form-title {color:#fc0303;text-align:center;font-size:2rem;font-weight:700;margin-bottom:0.5rem;line-height:1.2;}
 #_form_6_ ._html-code p {text-align:center;font-style:italic;color:#222;margin-bottom:1.5rem;}
 #_form_6_ ._form-content {display:flex;flex-direction:column;gap:1.2rem;}
@@ -26,7 +26,7 @@ const formHtml = `
   #_form_6_ ._form-fields-col {gap:1.2rem;}
 }
 </style>
-<div style="text-align: center;">
+<div style="text-align: center; width: 100%; /* Removido height: 100% para evitar scroll interno */">
   <form method="POST" action="https://digitalresultsadm.activehosted.com/proc.php" id="_form_6_" class="_form _form_6 _inline-form _inline-style _dark" novalidate data-styles-version="5">
     <input type="hidden" name="u" value="6" />
     <input type="hidden" name="f" value="6" />
@@ -75,7 +75,7 @@ const formHtml = `
 `;
 
 const ActiveCampaignForm = () => (
-  <div dangerouslySetInnerHTML={{ __html: formHtml }} />
+  <div style={{width: '100%'}} dangerouslySetInnerHTML={{ __html: formHtml }} />
 );
 
 export default ActiveCampaignForm;

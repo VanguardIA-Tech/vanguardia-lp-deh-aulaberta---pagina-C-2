@@ -30,7 +30,7 @@ const AboutSection = ({
             <div className="relative order-2 lg:order-1 flex justify-center items-center w-full">
               <div className="relative w-full flex justify-center items-center">
                 <div className="relative bg-transparent rounded-2xl p-0 border-0 w-full flex justify-center items-center">
-                  <img alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia" className="w-full h-auto rounded-xl object-fill" src="/lovable-uploads/0cfcbce1-7320-48e7-9c27-bcc72dec2394.png" />
+                  <img alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia" className="w-full h-auto rounded-xl object-fill" src="/JorgeAuad.png" />
                 </div>
               </div>
             </div>

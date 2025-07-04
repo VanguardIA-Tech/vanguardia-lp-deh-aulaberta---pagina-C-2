@@ -42,7 +42,7 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-8 sm:mb-12">
             {/* Mentorship Method */}
             <div className="bg-vanguardia-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 animate-slide-in border border-vanguardia-blue/30 hover:border-vanguardia-blue/50 transition-all duration-300 vanguardia-blue-glow">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-vanguardia-blue font-funnel">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-white font-funnel">
                 Mentoria Mensal com Jorge - Método (DEH)
               </h3>
               <div className="space-y-3 sm:space-y-4">

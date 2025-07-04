@@ -51,7 +51,7 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
         onClick={onClose}
       ></div>
       {/* Modal Content */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto border border-vanguardia-gray/20 flex flex-col items-center justify-center">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl max-h-[90vh] overflow-y-auto border border-vanguardia-gray/20 flex flex-col items-center justify-center p-2 sm:p-4 md:p-6 lg:p-8 min-w-[280px]">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -59,7 +59,7 @@ const FormModal = ({ isOpen, onClose }: FormModalProps) => {
         >
           <X className="w-5 h-5 text-vanguardia-gray" />
         </button>
-        <div className="w-full flex justify-center items-center py-8">
+        <div className="w-full flex justify-center items-center" style={{ width: '100%', overflow: 'visible' }}>
           <ActiveCampaignForm />
         </div>
       </div>
