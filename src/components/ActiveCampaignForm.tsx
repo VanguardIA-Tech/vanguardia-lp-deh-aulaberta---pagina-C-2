@@ -3,27 +3,63 @@ import React from "react";
 const formHtml = `
 <style>@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400,400i,700);</style>
 <style>
-#_form_6_ {font-size:16px;line-height:1.6;font-family:'IBM Plex Sans',arial,helvetica,sans-serif;margin:0;max-width:420px;margin:auto;padding:32px 0 32px 0;box-sizing:border-box;width:100%;/* Removido height e max-height para evitar scroll interno */}
+#_form_6_ {font-size:14px !important;line-height:1.4 !important;font-family:'IBM Plex Sans',arial,helvetica,sans-serif;margin:0;max-width:420px;margin:auto;padding:32px 0 32px 0;box-sizing:border-box;width:100%;/* Removido height e max-height para evitar scroll interno */}
 #_form_6_ ._form-title {color:#fc0303;text-align:center;font-size:2rem;font-weight:700;margin-bottom:0.5rem;line-height:1.2;}
 #_form_6_ ._html-code p {text-align:center;font-style:italic;color:#222;margin-bottom:1.5rem;}
-#_form_6_ ._form-content {display:flex;flex-direction:column;gap:1.2rem;}
-#_form_6_ ._form-fields-col {display:flex;flex-direction:column;gap:1rem;}
-#_form_6_ ._form_element {display:flex;flex-direction:column;gap:0.3rem;flex:1;}
+#_form_6_ ._form-content {display:flex;flex-direction:column;gap:0.6rem !important;}
+#_form_6_ ._form-fields-col {display:flex;flex-direction:column;gap:0.5rem !important;}
+#_form_6_ ._form_element {display:flex;flex-direction:column;gap:0.15rem !important;flex:1;}
 #_form_6_ ._form_element label {font-weight:600;color:#222;text-align:left;}
-#_form_6_ input[type="text"] {padding:10px 12px;border:1px solid #bdbdbd;border-radius:8px;font-size:1rem;width:100%;color:#000;background:#fff;}
+#_form_6_ input[type="text"] {font-size:0.85rem !important;padding:8px 10px !important;border:1px solid #bdbdbd;border-radius:8px;width:100%;color:#000;background:#fff;}
 #_form_6_ input[type="text"]::-webkit-input-placeholder {color:#888 !important;}
 #_form_6_ input[type="text"]::placeholder {color:#888 !important;}
 #_form_6_ input[type="text"]:-webkit-autofill { -webkit-text-fill-color: #000 !important; box-shadow: 0 0 0 1000px #fff inset !important; }
 #_form_6_ ._form-fieldset {border:0;padding:0;margin:0;}
-#_form_6_ ._form-fieldset legend {font-weight:600;color:#222;text-align:left;margin-bottom:0.5rem;}
+#_form_6_ ._form-fieldset legend {font-weight:600;color:#222;text-align:left;margin-bottom:0.5rem;font-size:0.9rem !important;}
 #_form_6_ ._row._checkbox-radio {display:flex;align-items:center;margin-bottom:0.2rem;}
 #_form_6_ ._row._checkbox-radio label {font-weight:400;margin-left:0.5rem;color:#222;}
-#_form_6_ ._submit {width:100%;max-width:220px;background:#fc0303 !important;color:#fff !important;font-weight:700;padding:14px 0;border-radius:12px;font-size:1.1rem;margin:1.5rem auto 0 auto;display:block;transition:background 0.2s;}
+#_form_6_ ._submit {
+  width: 100% !important;
+  max-width: 180px !important;
+  background: #fc0303 !important;
+  color: #fff !important;
+  font-weight: 700;
+  padding: 10px 0 !important;
+  border-radius: 12px;
+  font-size: 1rem !important;
+  margin: 1.5rem auto 0 auto;
+  display: block;
+  transition: background 0.2s;
+}
 #_form_6_ ._submit:hover {background:#b80000 !important;}
 @media (min-width:600px) {
   #_form_6_ {max-width:420px;}
   #_form_6_ ._form-content {gap:2rem;}
   #_form_6_ ._form-fields-col {gap:1.2rem;}
+  #_form_6_ ._submit {
+    max-width: 220px !important;
+  }
+}
+@media (max-width: 400px) {
+  #_form_6_ {
+    padding: 16px 12px !important;
+    font-size:12px !important;
+  }
+  #_form_6_ ._form-content {
+    gap: 1rem !important;
+  }
+  #_form_6_ ._form-fields-col {
+    gap: 0.8rem !important;
+  }
+  #_form_6_ input[type="text"] {
+    font-size: 0.75rem !important;
+    padding:6px 8px !important;
+  }
+  #_form_6_ ._submit {
+    font-size: 0.9rem !important;
+    padding: 8px 0 !important;
+    max-width: 100% !important;
+  }
 }
 </style>
 <div style="text-align: center; width: 100%; /* Removido height: 100% para evitar scroll interno */">

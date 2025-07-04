@@ -3,11 +3,9 @@ import { Button } from "@/components/ui/button";
 interface AboutSectionProps {
   onOpenModal: () => void;
 }
-const AboutSection = ({
-  onOpenModal
-}: AboutSectionProps) => {
+const AboutSection = ({ onOpenModal }: AboutSectionProps) => {
   const credentials = ["Conselheiro de Growth & IA em empresas que ultrapassam 9 dígitos/ano de receita", "CEO do Grupo Vanguardia e sócio do Do IT Hub, ecossistema de inovação em Belém", "Mais de 400 projetos acelerados e múltiplos 7 dígitos de faturamento", "8 anos no mercado digital, construindo negócios, agências e aceleradoras"];
-  return <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-vanguardia-black via-vanguardia-dark-blue to-vanguardia-medium-blue relative overflow-hidden">
+  return <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-vanguardia-black via-vanguardia-dark-blue to-vanguardia-medium-blue overflow-hidden">
       {/* Background decorativo com elementos sofisticados */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-20 sm:-top-40 -right-20 sm:-right-40 w-60 h-60 sm:w-80 sm:h-80 bg-vanguardia-blue/10 rounded-full blur-3xl animate-pulse-glow"></div>
@@ -16,20 +14,18 @@ const AboutSection = ({
       }}></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 sm:w-96 sm:h-96 bg-vanguardia-blue/5 rounded-full blur-3xl"></div>
       </div>
-      
-      <div className="container mx-auto px-0 sm:px-0 lg:px-0 relative z-10 w-full">
-        <div className="w-full">
+      <div className="container mx-auto px-0 sm:px-0 lg:px-0 relative z-10 w-full flex flex-col">
+        <div className="w-full flex-grow">
           <div className="text-center mb-12 sm:mb-16 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-vanguardia-white font-funnel vanguardia-text-glow">
               Quem Sou Eu
             </h2>
           </div>
-          
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Image Section */}
-            <div className="relative order-2 lg:order-1 flex justify-center items-center w-full">
-              <div className="relative w-full flex justify-center items-center">
-                <div className="relative bg-transparent rounded-2xl p-0 border-0 w-full flex justify-center items-center">
+            <div className="relative order-2 lg:order-1 flex justify-center items-end w-full">
+              <div className="relative w-full flex justify-center items-end">
+                <div className="relative bg-transparent rounded-2xl p-0 border-0 w-full flex justify-center items-end">
                   <img alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia" className="w-full h-auto rounded-xl object-fill" src="/JorgeAuad.png" />
                 </div>
               </div>
@@ -47,18 +43,18 @@ const AboutSection = ({
                   </div>
                 ))}
               </div>
-              <div className="text-center w-full flex justify-center mb-8">
+              <div className="text-center w-full flex flex-col items-center mb-8">
                 <Button onClick={onOpenModal} size="lg" className="w-[300px] h-[60px] sm:w-[380px] sm:h-[68px] bg-lime-400 hover:bg-lime-500 text-black font-bold text-base sm:text-lg transition-all duration-300 font-funnel border-0 rounded-xl uppercase tracking-wide mx-auto flex items-center justify-center mb-6 text-center whitespace-normal">
                   Quero fazer parte da mentoria mensal - R$0
                 </Button>
+                <footer className="w-full text-center text-xs text-vanguardia-gray py-6 font-redhat opacity-80 mt-0">
+                  TODOS OS DIREITOS RESERVADOS. VANGUARDIA, 2025
+                </footer>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <footer className="w-full text-center text-xs text-vanguardia-gray py-6 font-redhat opacity-80 mt-28">
-        TODOS OS DIREITOS RESERVADOS. VANGUARDIA, 2025
-      </footer>
     </section>;
 };
 export default AboutSection;
