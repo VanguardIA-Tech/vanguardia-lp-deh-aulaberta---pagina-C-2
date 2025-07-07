@@ -45,13 +45,13 @@ const AboutSection = ({ onOpenModal }: AboutSectionProps) => {
                     borderRadius: "16px",
                     boxShadow: "0 4px 24px rgba(0,0,0,0.15)",
                     overflow: "hidden",
-                    width: "350px", // Padrão para telas menores
+                    width: "380px", // Expandido para telas menores
                     maxWidth: "100%",
                   }}
                 >
                   <img
                     alt="Jorge Antonio Auad Filho - CEO Grupo Vanguardia"
-                    className="block w-full h-auto lg:w-[400px]" // Ampliado para desktop
+                    className="block w-full h-auto lg:w-[530px]" // Expandido para desktop
                     src="/JorgeAuad.png"
                   />
                 </div>
