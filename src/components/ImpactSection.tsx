@@ -31,7 +31,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
               </p>
               <p className="text-xl mb-8 text-vanguardia-gray leading-relaxed font-redhat w-full break-words text-center">
                 Aumenta teu ticket em 10x usando o mesmo conhecimento que tu já tem, 
-                apenas deixando de ser braço para se tornar cérebro.
+                apenas deixando de ser braço para se tornar cérebro, exatamente como 120 profissionais já aprenderam com a gente.
               </p>
               <Button 
                 onClick={onOpenModal} 
