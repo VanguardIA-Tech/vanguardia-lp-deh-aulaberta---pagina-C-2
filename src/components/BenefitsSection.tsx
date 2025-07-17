@@ -1,5 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ScrollDownArrow from "@/components/ScrollDownArrow"; // Importando o componente ScrollDownArrow
 
 interface BenefitsSectionProps {
   onOpenModal: () => void;
@@ -85,6 +86,7 @@ const BenefitsSection = ({ onOpenModal }: BenefitsSectionProps) => {
           </div>
         </div>
       </div>
+      <ScrollDownArrow /> {/* Adicionando o componente ScrollDownArrow aqui */}
     </section>
   );
 };
