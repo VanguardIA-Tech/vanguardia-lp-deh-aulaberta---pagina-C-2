@@ -27,7 +27,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
                 Tu estás usando IA errado.
               </h2>
               <p className="text-2xl md:text-3xl mb-8 text-vanguardia-blue italic font-funnel font-semibold w-full break-words text-center">
-                E isso te custa 28k por mês.
+                E isso te custa 28k por projeto.
               </p>
               <p className="text-xl mb-8 text-vanguardia-gray leading-relaxed font-redhat w-full break-words text-center">
                 Aumenta teu ticket em 10x usando o mesmo conhecimento que tu já tem, 
@@ -38,7 +38,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
                 size="lg" 
                 className="w-[300px] h-[60px] sm:w-[380px] sm:h-[68px] bg-lime-400 hover:bg-lime-500 text-black font-bold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 vanguardia-blue-glow font-funnel uppercase tracking-wide mx-auto mb-6 rounded-xl flex items-center justify-center text-center whitespace-normal"
               >
-                Quero fazer parte da Mentoria Mensal 
+                QUERO ASSISTIR A MENTORIA ABERTA MENSAL
               </Button>
               <div className="space-y-4 mb-8 w-full lg:max-w-lg mx-auto lg:mx-0">
                 {stats.map((stat, index) => (
