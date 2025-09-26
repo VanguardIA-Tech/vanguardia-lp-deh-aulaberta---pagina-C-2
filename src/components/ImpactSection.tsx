@@ -14,17 +14,16 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
       {/* <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-24 h-24 sm:w-32 sm:h-32 bg-vanguardia-blue/20 rounded-full blur-3xl animate-pulse-glow"></div> */}
       {/* <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-28 h-28 sm:w-40 sm:h-40 bg-vanguardia-blue/15 rounded-full blur-3xl animate-pulse-glow" style={{animationDelay: '1s'}}></div> */}
       <div className="container mx-auto px-0 relative z-10 min-h-screen flex items-center w-full max-w-none">
-        <div className="max-w-10xl mx-auto w-full" style={{ marginLeft: '5rem', marginRight: '5rem' }}>
+        <div className="max-w-10xl mx-auto w-full" style={{ marginLeft: '15rem', marginRight: '5rem' }}>
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen max-w-none w-full px-0">
             {/* Content */}
-            <div className="animate-fade-in text-center lg:text-left flex flex-col items-start lg:items-start justify-center px-4 w-[145%]">
+            <div className="animate-fade-in text-center lg:text-left flex flex-col items-start lg:items-start justify-center px-4 w-full">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-funnel text-vanguardia-white vanguardia-text-glow max-w-full w-full break-words mx-auto text-left">
-                Você ainda vende execução sem método e por isso tá na briga em  guerra de
-                <span className= "whitespace-nowrap"> preços?🚨  </span>                      
+                Você ainda vende execução sem método e por isso tá na briga em guerra de preços? 🚨                               
               </h1>
               
               <h5 className="text-2xl md:text-3xl mb-8 text-vanguardia-blue font-funnel font-semibold w-full break-words text-left">
-                  Enquanto tu segues apagando incêndios e negociando centavos, outros estão fechando projetos de R$21k, R$48k e até R$120k.
+                  Enquanto <span className="underline">tu segues apagando incêndios</span> e negociando centavos, outros estão fechando projetos de R$21k, R$48k e até R$120k.
                 </h5>
               <p className="text-xl mb-8 text-vanguardia-gray leading-relaxed font-redhat w-full break-words text-left">
                Usando clareza, método próprio e Inteligência Artificial como diferencial.
@@ -36,7 +35,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
               >
                 PARTICIPAR DA MENTORIA ABERTA
               </Button>
-                <div className="w-[300px] sm:w-[380px] mt-4"> {/* Ajustado para ter a mesma largura do botão */}
+                <div className="w-[300px] sm:w-[380px] mt-4">
                   <p className="text-sm text-vanguardia-gray text-left leading-relaxed">
                   100% Secure - Privacy Guaranteed
                   </p>
