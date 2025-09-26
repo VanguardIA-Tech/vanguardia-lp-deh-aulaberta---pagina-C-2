@@ -35,8 +35,8 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
               >
                 PARTICIPAR DA MENTORIA ABERTA
               </Button>
-                <div className="min-w-[300px] max-w-[100%] mt-8">
-                  <p className="text-sm text-vanguardia-gray text-left leading-relaxed">
+                <div className="min-w-[300px] max-w-[100%] mt-4">
+                  <p className="text-sm text-vanguardia-gray text-left leading-relaxed"> {/* Removido text-center para alinhar à esquerda em todas as telas */}
                   100% Secure - Privacy Guaranteed
                   </p>
                 </div>
