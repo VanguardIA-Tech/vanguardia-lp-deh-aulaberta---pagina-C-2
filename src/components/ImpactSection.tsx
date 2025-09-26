@@ -19,7 +19,8 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
             {/* Content */}
             <div className="animate-fade-in text-center lg:text-left flex flex-col items-start lg:items-start justify-center px-4 w-full">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-funnel text-vanguardia-white vanguardia-text-glow max-w-full w-full break-words mx-auto text-left">
-                Você ainda vende execução sem método e por isso tá na briga em guerra de preços?🚨                               
+                Você ainda vende execução sem método e por isso tá na briga em 
+                <span className= ""> guerra de preços?🚨  </span>                      
               </h1>
               
               <h5 className="text-2xl md:text-3xl mb-8 text-vanguardia-blue font-funnel font-semibold w-full break-words text-left">
