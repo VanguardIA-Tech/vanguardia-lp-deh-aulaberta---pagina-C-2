@@ -23,7 +23,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
               </h1>
               
               <h5 className="text-2xl md:text-3xl mb-8 text-vanguardia-blue font-funnel font-semibold w-full break-words text-left">
-                  Enquanto <span className="underline">tu segues apagando incêndios</span> e negociando centavos, outros estão fechando projetos de R$21k, R$48k e até R$120k.
+                  Enquanto <span className="underline">tu segues apagando incêndios</span> e negociando centavos, outros estão fechando projetos de <span className="font-bold">R$21k, R$48k e até R$120k</span>.
                 </h5>
               <p className="text-xl mb-8 text-vanguardia-gray leading-relaxed font-redhat w-full break-words text-left">
                Usando clareza, método próprio e Inteligência Artificial como diferencial.
