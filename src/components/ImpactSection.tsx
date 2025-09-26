@@ -14,7 +14,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
       {/* <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-24 h-24 sm:w-32 sm:h-32 bg-vanguardia-blue/20 rounded-full blur-3xl animate-pulse-glow"></div> */}
       {/* <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-28 h-28 sm:w-40 sm:h-40 bg-vanguardia-blue/15 rounded-full blur-3xl animate-pulse-glow" style={{animationDelay: '1s'}}></div> */}
       <div className="container mx-auto px-0 relative z-10 min-h-screen flex items-center w-full max-w-none">
-        <div className="max-w-10xl mx-auto w-full" style={{ marginLeft: '15rem', marginRight: '5rem' }}>
+        <div className="max-w-10xl mx-auto w-full" style={{ marginLeft: '5rem', marginRight: '5rem' }}>
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen max-w-none w-full px-0">
             {/* Content */}
             <div className="animate-fade-in text-center lg:text-left flex flex-col items-start lg:items-start justify-center px-4 w-full">
