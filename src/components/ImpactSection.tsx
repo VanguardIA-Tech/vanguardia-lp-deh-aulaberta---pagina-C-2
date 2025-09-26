@@ -17,7 +17,7 @@ const ImpactSection = ({ onOpenModal }: ImpactSectionProps) => {
         <div className="max-w-10xl mx-auto w-full" style={{ marginLeft: '5rem', marginRight: '5rem' }}>
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen max-w-none w-full px-0">
             {/* Content */}
-            <div className="animate-fade-in text-center lg:text-left flex flex-col items-start lg:items-start justify-center px-4 w-[130%]">
+            <div className="animate-fade-in text-center lg:text-left flex flex-col items-start lg:items-start justify-center px-4 w-[135%]">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-funnel text-vanguardia-white vanguardia-text-glow max-w-full w-full break-words mx-auto text-left">
                 Você ainda vende execução sem método e por isso tá na 
                 <span className= "whitespace-nowrap">briga em  guerra de preços?🚨  </span>                      
